@@ -11,6 +11,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript">
+	  		window.addEventListener("DOMContentLoaded", function(e) {
+		  
+			var stage = document.getElementById("stage");
+			var slideComplete = function(e) { stage.appendChild(arr[0]); };
+			var arr = stage.getElementsByTagName("a");
+			for(var i=0; i < arr.length; i++) {
+				arr[i].addEventListener("animationend", slideComplete, false);
+			  }
+		  
+			}, false);
+		  
+		</script>
+
 	</head>
 	<body class="is-preload">
 
@@ -88,24 +102,32 @@
 								</article>
 								<article>
 									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
+	
+										<h2>OAS - OSHA Audit System</h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<p>OAS - an application to support a local HR function at a service center for auditing records to ensure OSHA compliance. This application has been key for compliance with OSHA while increasing visibility into the process, producing metrics for employees and management.</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">View Code</a></li>
+										<li><a href="#" class="icon fa-lock button">Code Not Available</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
+
+										<h2>CFS - Customer Feedback System</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<div id="stage">
+											<img src="images/cfs1.jpg" class="image fit" alt="screenshot 1 of project">
+											<img src="images/cfs2.jpg" class="image fit" alt="screenshot 2 of project">
+											<img src="images/cfs3.jpg" class="image fit" alt="screenshot 3 of project">
+					
+											</div> 
+									<p>Project - customer feedback application that assists operations and accounting in determining failures, working through root cause analysis, and bringing visibility to refunds, and customer retention. 
+											<blockquote>
+												<p>Completion of this project drove improvements in filing service failures with our vendors, thus recouping expenses that otherwise would not have been collected. In the first year we recovered over $200,000 in payments to our vendors over
+											the previous years. Over the last 7 years we have improved our response time to customer concerns, drove service enhancements to drive down service claims that would not have been visible without the CFS Matt designed and deployed.
+												</p>
+										</blockquote> </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Code</a></li>
 									</ul>
