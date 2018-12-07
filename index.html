@@ -8,7 +8,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 		<script type="text/javascript">
 	  		window.addEventListener("DOMContentLoaded", function(e) {
 		  
@@ -27,8 +27,19 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-		
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+<script>
+	var tabLinks;
+	var tabPanels;
+
+	window.onload=function() {
+		// when the page loads up snag the tabs from the LIs
+		document.getElementById("tabs").getElementsByTagName("li");
+	}
+</script>
+
 	</head>
 	<body class="is-preload">
 
@@ -54,7 +65,7 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Projects</a></li>
-							<li class="active"><a href="index.html">Photography</a></li>
+							<li ><a href="photo.html">Photo / Video</a></li>
 						</ul>
 						<ul class="icons">
 
@@ -94,12 +105,11 @@
 								</article>
 								<article>
 									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
+					
+										<h2>myKCS Rewards</h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<p>Designed and collaborated in coding a customer service portal for representatives to view personal statistics, and gamifying awards and rewards. Points could be achieved through performance metrics, and redeemed for performance.</p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Code</a></li>
 									</ul>
@@ -121,13 +131,13 @@
 										<!-- The slideshow -->
 										<div class="carousel-inner">
 											<div class="carousel-item active">
-											<img src="images/oas1.jpg" width="80%" alt="Auditor Dashboard">
+											<img src="images/OAS1.jpg"  width="80%"  alt="Auditor Dashboard">
 											</div>
 											<div class="carousel-item">
-											<img src="images/oas2.jpg"  width="80%" alt="Main dispatch view">
+											<img src="images/oas2.jpg"   width="80%" alt="Main dispatch view">
 											</div>
 											<div class="carousel-item">
-											<img src="images//oas3.jpg" width="80%"  alt="User Rights">
+											<img src="images//oas3.jpg"   width="80%" alt="User Rights">
 											</div>
 										</div>
 										
@@ -144,7 +154,7 @@
 									<p>OAS - an application to support a local HR function at a service center for auditing records to ensure OSHA compliance. This application has been key for compliance with OSHA while increasing visibility into the process, producing metrics for employees and management.</p>
 									<ul class="actions special">
 		
-										<li><button type="button" class="btn btn-info btn-lg icon fa-lock"  title="Sorry. This employer did not permit access to the internal code.">Code Not Available</button></li>
+										<li><button type="button" class="btn  btn-lg icon fa-lock"  title="Sorry. This employer did not permit access to the internal code.">Code Not Available</button></li>
 									</ul>
 								</article>
 								<article>
@@ -175,10 +185,10 @@
 										</div>
 										
 										<!-- Left and right controls -->
-										<a class="carousel-control-prev" href="#demo" data-slide="prev">
+										<a class="carousel-control-prev" href="#cfs" data-slide="prev">
 											<span class="carousel-control-prev-icon"></span>
 										</a>
-										<a class="carousel-control-next" href="#demo" data-slide="next">
+										<a class="carousel-control-next" href="#cfs" data-slide="next">
 											<span class="carousel-control-next-icon"></span>
 										</a>
 										
@@ -192,47 +202,47 @@
 												</p>
 										</blockquote> </p>
 
-				<!-- Modal section for project code not being available -->
-				<div class="container mt-3">
-					<h2>Modal Example</h2>
-					<!-- Button to Open the Modal -->
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-					  Open modal
-					</button>
-				  
-					<!-- The Modal -->
-					<div class="modal fade" id="myModal">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-						
-						  <!-- Modal Header -->
-						  <div class="modal-header">
-							<h4 class="modal-title">Code not available for review</h4>
-							<button type="button" class="close" data-dismiss="modal">×</button>
-						  </div>
-						  
-						  <!-- Modal body -->
-						  <div class="modal-body">
-							I'm sorry, however the company does not permit this code from the private intranet for review.
-						  </div>
-						  
-						  <!-- Modal footer -->
-						  <div class="modal-footer">
-							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-						  </div>
-						  
-						</div>
-					  </div>
-					</div>
-					
-				  </div>
+								<!-- Modal section for project code not being available -->
+								<div class="container mt-3">
+									<h2>Modal Example</h2>
+									<!-- Button to Open the Modal -->
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+									Open modal
+									</button>
+								
+									<!-- The Modal -->
+									<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+										
+										<!-- Modal Header -->
+										<div class="modal-header">
+											<h4 class="modal-title">Code not available for review</h4>
+											<button type="button" class="close" data-dismiss="modal">×</button>
+										</div>
+										
+										<!-- Modal body -->
+										<div class="modal-body">
+											I'm sorry, however the company does not permit this code from the private intranet for review.
+										</div>
+										
+										<!-- Modal footer -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+										</div>
+										
+										</div>
+									</div>
+									</div>
+									
+								</div>
 
-									<ul class="actions special">
-											<li><button type="button" class="btn btn-info btn-lg icon fa-lock"  title="Sorry. This employer did not permit access to the internal code.">Code Not Available</button></li>
-									</ul>
-								</article>
+								<ul class="actions special">
+										<li><button type="button" class="btn  btn-lg icon fa-lock"  title="Sorry. This employer did not permit access to the internal code.">Code Not Available</button></li>
+								</ul>
+							</article>
 
-							</section>
+						</section>
 
 					
 					</div>
