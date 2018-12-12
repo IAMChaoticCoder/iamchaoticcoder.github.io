@@ -299,6 +299,7 @@ input, select, textarea {
 		a:hover {
 			border-bottom-color: transparent;
 			color: #18bfef !important;
+			text-decoration:none;
 		}
 
 	strong, b {
@@ -3835,23 +3836,61 @@ input, select, textarea {
 			}
 
 			#main > .posts > article {
-				border-color: #eeeeee;
-				border-left-width: 2px;
-				border-style: solid;
-				border-top-width: 2px;
+
 				text-align: center;
+				
+				
 			}
 
 				#main > .posts > article > :last-child {
-					margin-bottom: 0;
+					margin-bottom: 5;
+
 				}
 
 				#main > .posts > article:nth-child(2n - 1) {
-					border-left-width: 0;
+					border-left-width: 5;
 				}
 
 				#main > .posts > article:nth-child(-n + 2) {
-					border-top-width: 0;
+					border-top-width: 5;
+	
+				}
+
+
+				#main > .posts > article:nth-child(1) {
+					background-color: rgba(0, 0, 0, 0.105);
+				}
+	
+				#main > .posts > article:nth-child(2) {
+					background-color: rgba(0, 0, 0, 0.14);
+				}
+	
+				#main > .posts > article:nth-child(3) {
+					background-color: rgba(0, 0, 0, 0.175);
+				}
+	
+				#main > .posts > article:nth-child(4) {
+					background-color: rgba(0, 0, 0, 0.21);
+				}
+	
+				#main > .posts > article:nth-child(5) {
+					background-color: rgba(0, 0, 0, 0.245);
+				}
+	
+				#main > .posts > article:nth-child(6) {
+					background-color: rgba(0, 0, 0, 0.28);
+				}
+	
+				.features li:nth-child(7) {
+					background-color: rgba(0, 0, 0, 0.315);
+				}
+	
+				.features li:nth-child(8) {
+					background-color: rgba(0, 0, 0, 0.325);
+				}
+	
+				.features li:nth-child(9) {
+					background-color: rgba(0, 0, 0, 0.345);
 				}
 
 			@media screen and (max-width: 980px) {
